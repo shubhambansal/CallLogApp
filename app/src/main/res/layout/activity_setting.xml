@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.log.CallLogListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:name="test.app.calllog.screens.settings.SettingsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.settings.SettingActivity" />
+
+
+</LinearLayout>
